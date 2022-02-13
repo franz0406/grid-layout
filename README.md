@@ -21,14 +21,11 @@ grid-auto-flow: dense;
 #### Fraction
 ![fraction](https://user-images.githubusercontent.com/80723523/153728750-97da29de-1b67-491b-ad4c-fc6d9d0106a7.jpg)
 
-#### repeat( count, size ) & auto-fit, minmax()
+#### repeat( count, size )
 ```css
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(2, 100px);
-
-grid-template-columns: repeat(auto-fit, 300px);
 ```
-
 
 #### auto-fit & minmax( min-size, max-size )
 ```css
@@ -47,6 +44,7 @@ grid-column-gap:10px;  /* 열 사이 간격 */
 
 #### 자식요소 그리드 포지셔닝 속성
 ##### 그리드 Line 기준
+```
 - grid-column-start:1; 행 시작 포인트
 - grid-column-end:3;   행 끝 포인트
 - grid-column:1/3;     축약형 시작/끝
@@ -55,13 +53,15 @@ grid-column-gap:10px;  /* 열 사이 간격 */
 - grid-row-end:3;      열 끝 포인트
 - grid-row:1/3;        축약형 시작/끝
 - grid-column:1/-1;    -1 은 맨끝지점
+```
 ##### 그리드 Cell 기준
+```
 - grid-column:auto/span 3;  자기 위치기준 몇 컬럼 사용할지 정의
 - grid-column:span 3;       auto 속성 생략 가능함.
 
 - justify-self:;  flex의 justify-content 속성과 동일
 - align-self:;    flex의 align-items 속성과 동일
-
+```
 
 ##### Gris Template areas - 그리드 커스텀
 ```html
