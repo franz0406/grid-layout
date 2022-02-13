@@ -1,0 +1,90 @@
+@import url(./reset.css);
+@import url(./main.css);
+
+body {
+  color: #292929;
+  font-family: 'Open sans', sans-serif;
+}
+
+/* grid layout */
+.grid {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 94fr 190fr 30fr 158fr 314fr 64fr;
+  grid-template-rows: 39px auto 10fr auto auto 29px;
+}
+.grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img1 {
+  grid-column: 1/span 2;
+  grid-row: 2/span 3;
+}
+.img2 {
+  grid-column: 2/span 2;
+  grid-row: 3/span 3;
+}
+.img3 {
+  grid-column: 5/-1;
+  grid-row: 4/span 2;
+}
+.wave_line {  
+  grid-column: 5/6;
+  grid-row: 1/2; 
+}
+.wave_line img {
+  width: 50%;
+  object-fit:unset;
+}
+blockquote {
+  grid-column: 4/span 2;
+  grid-row: 2/3;
+
+  padding: 10px 50px 30px;
+  font-size:14px;
+  line-height: 1.6;
+  font-style: italic;
+  text-align: center;
+}
+.main-banner {
+  padding: 60px 0 60px 95px;
+  grid-column: 4/span 2;
+  grid-row: 4/span 2;
+}
+.main-banner h1 {
+  position: relative;
+  font-size:5vw;
+  line-height: 1.2;
+}
+.main-banner h1::before{
+  position: absolute;
+  content:"";
+  top: 50%; left: -70px;
+  transform: translateY(-50%);
+  width: 45px; height: 45px;
+  background: url(../image/badge.svg)no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.main-banner p {
+  font-size:14px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #666;
+  word-break: break-all;
+}
+.main-banner a {
+  display: inline-block;
+  padding:0 20px;
+  background: #000;
+  color:white;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 30px;
+}

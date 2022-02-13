@@ -63,7 +63,7 @@ grid-column-gap:10px;  /* 열 사이 간격 */
 - align-self:;    flex의 align-items 속성과 동일
 ```
 
-##### Gris Template areas - 그리드 커스텀
+##### Grid Template areas - 그리드 커스텀
 ```html
 <div>
     <div class="header">H</div>
